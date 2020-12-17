@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+/* Style the top navigation bar */
+body{
+  background-image: url("./backgg.jpg");
+background-repeat: repeat-y;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  background-color:black ;
+  overflow: hidden;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.layoutrow{
+ display:grid;
+ grid-template-columns: 120px 1fr 120px;
+ margin-top:15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Clear floats after the columns */
+.layoutrow:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-dialog{
+  box-shadow: 1px 1px 10px 1px white;
 }
